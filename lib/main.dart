@@ -320,7 +320,7 @@ class LayoutWeb extends StatelessWidget {
                               padding: EdgeInsets.symmetric(vertical: 15,horizontal: 5),
                               width: 220,
                               child: TextCustom(
-                                text: 'Recebe seu produto na casa ou trabalho economizando \$ e ainda ajuda no combate ao desperdício de alimentos',
+                                text: 'Receba seu produto na casa ou trabalho economizando \$ e ajudando no combate ao desperdício de alimentos',
                                 textAlign: TextAlign.center,
                                 maxLines: 8,
                                 size: 22.0,
@@ -551,7 +551,7 @@ class LayoutMobile extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10.0),
                     ),
                     child: Container(
-                      height: 200,
+                      height: 250,
                       width: double.infinity,
                       padding: EdgeInsets.all(15),
                       child: Column(
@@ -568,7 +568,7 @@ class LayoutMobile extends StatelessWidget {
                             ),
                           ),
                           Spacer(),
-                          Icon(Icons.shopping_bag_outlined,size: 65,color: Color(greyDark),)
+                          Icon(Icons.shopping_bag_outlined,size: 50,color: Color(greyDark),)
                         ],
                       ),
                     ),
@@ -580,7 +580,7 @@ class LayoutMobile extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10.0),
                     ),
                     child: Container(
-                      height: 200,
+                      height: 250,
                       width: double.infinity,
                       padding: EdgeInsets.all(15),
                       child: Column(
@@ -597,7 +597,7 @@ class LayoutMobile extends StatelessWidget {
                             ),
                           ),
                           Spacer(),
-                          Icon(Icons.check_circle_outline,size: 65,color: Color(greyDark),)
+                          Icon(Icons.check_circle_outline,size: 50,color: Color(greyDark),)
                         ],
                       ),
                     ),
@@ -609,7 +609,7 @@ class LayoutMobile extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10.0),
                     ),
                     child: Container(
-                      height: 200,
+                      height: 250,
                       width: double.infinity,
                       padding: EdgeInsets.all(15),
                       child: Column(
@@ -617,7 +617,7 @@ class LayoutMobile extends StatelessWidget {
                           Container(
                             padding: EdgeInsets.all(15),
                             child: TextCustom(
-                              text: 'Recebe seu produto na casa ou trabalho economizando \$ e ainda ajuda no combate ao desperdício de alimentos',
+                              text: 'Receba seu produto na casa ou trabalho economizando \$ e ajudando no combate ao desperdício de alimentos',
                               textAlign: TextAlign.center,
                               maxLines: 8,
                               size: 18.0,
@@ -626,7 +626,7 @@ class LayoutMobile extends StatelessWidget {
                             ),
                           ),
                           Spacer(),
-                          Icon(Icons.percent,size: 65,color: Color(greyDark),)
+                          Icon(Icons.percent,size: 50,color: Color(greyDark),)
                         ],
                       ),
                     ),
