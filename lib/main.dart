@@ -649,7 +649,7 @@ class LayoutMobile extends StatelessWidget {
             Container(
               color: Color(orange),
               width: double.infinity,
-              height: 300,
+              height: 200,
               child: Column(
                 children: [
                   SizedBox(height: 20,),
