@@ -320,7 +320,7 @@ class LayoutWeb extends StatelessWidget {
                               padding: EdgeInsets.symmetric(vertical: 15,horizontal: 5),
                               width: 220,
                               child: TextCustom(
-                                text: 'Receba seu produto na casa ou trabalho economizando \$ e ajudando no combate ao desperdício de alimentos',
+                                text: 'Receba seu produto em casa ou trabalho, economizando \$ e ajudando no combate ao desperdício de alimentos',
                                 textAlign: TextAlign.center,
                                 maxLines: 8,
                                 size: 22.0,
@@ -617,7 +617,7 @@ class LayoutMobile extends StatelessWidget {
                           Container(
                             padding: EdgeInsets.all(15),
                             child: TextCustom(
-                              text: 'Receba seu produto na casa ou trabalho economizando \$ e ajudando no combate ao desperdício de alimentos',
+                              text: 'Receba seu produto em casa ou trabalho, economizando \$ e ajudando no combate ao desperdício de alimentos',
                               textAlign: TextAlign.center,
                               maxLines: 8,
                               size: 18.0,
@@ -649,7 +649,7 @@ class LayoutMobile extends StatelessWidget {
             Container(
               color: Color(orange),
               width: double.infinity,
-              height: 200,
+              height: 210,
               child: Column(
                 children: [
                   SizedBox(height: 20,),
@@ -683,8 +683,9 @@ class LayoutMobile extends StatelessWidget {
                       Container(),
                     ],
                   ),
-                  SizedBox(height: 20,),
+                  SizedBox(height: 10,),
                   Image.asset('assets/image/logo_bottom.png',height: 75,),
+                  SizedBox(height: 20,),
                 ],
               ),
             )
