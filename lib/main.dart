@@ -76,7 +76,7 @@ class LayoutWeb extends StatelessWidget {
               Spacer(),
               InkWell(
                 onTap: (){
-                  controller.jumpTo(0);
+                  controller.animateTo(0,duration: Duration(seconds: 1),curve: Curves.easeInOut);
                 },
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 8.0),
@@ -89,7 +89,7 @@ class LayoutWeb extends StatelessWidget {
               ),
               InkWell(
                 onTap: (){
-                  controller.jumpTo(MediaQuery.of(context).size.height*0.8);
+                  controller.animateTo(MediaQuery.of(context).size.height*0.8,duration: Duration(seconds: 1),curve: Curves.easeInOut);
                 },
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 8.0),
@@ -102,7 +102,7 @@ class LayoutWeb extends StatelessWidget {
               ),
               InkWell(
                 onTap: (){
-                  controller.jumpTo(heightWeb);
+                  controller.animateTo(heightWeb,duration: Duration(seconds: 2),curve: Curves.easeInOut);
                 },
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 8.0),
@@ -115,7 +115,7 @@ class LayoutWeb extends StatelessWidget {
               ),
               InkWell(
                 onTap: (){
-                  controller.jumpTo(heightWeb);
+                  controller.animateTo(heightWeb,duration: Duration(seconds: 2),curve: Curves.easeInOut);
                 },
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 8.0),
@@ -217,26 +217,26 @@ class LayoutWeb extends StatelessWidget {
               children: [
                 Padding(
                   padding: const EdgeInsets.only(top: 60.0),
-                  child: TextCustom(text:'O Aplicativo feito para você que quer',size: 22.0,fontWeight: FontWeight.bold,color: Colors.white,),
+                  child: TextCustom(text:'O Aplicativo feito para você que quer',size: 30.0,fontWeight: FontWeight.bold,color: Colors.white,),
                 ),
                 RichText(
                     text: TextSpan(
                         children: [
                           TextSpan(
                               text: 'POUPAR',
-                              style: TextStyle(color: Colors.white,fontSize: 22.0,fontWeight: FontWeight.bold,fontFamily: 'Nunito',decoration: TextDecoration.underline)
+                              style: TextStyle(color: Colors.white,fontSize: 30.0,fontWeight: FontWeight.bold,fontFamily: 'Nunito',decoration: TextDecoration.underline)
                           ),
                           TextSpan(
                               text: ' e evitar o ',
-                              style: TextStyle(color: Colors.white,fontSize: 22.0,fontWeight: FontWeight.bold,fontFamily: 'Nunito')
+                              style: TextStyle(color: Colors.white,fontSize: 30.0,fontWeight: FontWeight.bold,fontFamily: 'Nunito')
                           ),
                           TextSpan(
                               text: 'DESPERDÍCIO',
-                              style: TextStyle(color: Colors.white,fontSize: 22.0,fontWeight: FontWeight.bold,fontFamily: 'Nunito',decoration: TextDecoration.underline)
+                              style: TextStyle(color: Colors.white,fontSize: 30.0,fontWeight: FontWeight.bold,fontFamily: 'Nunito',decoration: TextDecoration.underline)
                           ),
                           TextSpan(
                               text: ' de alimentos ',
-                              style: TextStyle(color: Colors.white,fontSize: 22.0,fontWeight: FontWeight.bold,fontFamily: 'Nunito')
+                              style: TextStyle(color: Colors.white,fontSize: 30.0,fontWeight: FontWeight.bold,fontFamily: 'Nunito')
                           ),
                         ]
                     )
@@ -258,7 +258,7 @@ class LayoutWeb extends StatelessWidget {
                           children: [
                             Container(
                               padding: EdgeInsets.symmetric(vertical: 30,horizontal: 15),
-                              width: 220,
+                              width: 250,
                               child: TextCustom(
                                 text: 'Você seleciona um dos estabelecimentos próximos a você e escolhe o tipo de produto que deseja',
                                 textAlign: TextAlign.center,
@@ -288,7 +288,7 @@ class LayoutWeb extends StatelessWidget {
                           children: [
                             Container(
                               padding: EdgeInsets.symmetric(vertical: 30,horizontal: 15),
-                              width: 220,
+                              width: 250,
                               child: TextCustom(
                                 text: 'Seleciona o endereço para entrega, a forma de pagamento e confirma o pedido',
                                 textAlign: TextAlign.center,
@@ -318,7 +318,7 @@ class LayoutWeb extends StatelessWidget {
                           children: [
                             Container(
                               padding: EdgeInsets.symmetric(vertical: 15,horizontal: 5),
-                              width: 220,
+                              width: 250,
                               child: TextCustom(
                                 text: 'Receba seu produto em casa ou trabalho, economizando \$ e ajudando no combate ao desperdício de alimentos',
                                 textAlign: TextAlign.center,
@@ -340,14 +340,12 @@ class LayoutWeb extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 80,),
-          Image.asset('assets/image/celulares.png',height: 500,),
-          SizedBox(height: 80,),
-          TextCustom(text: 'Sobre nós',size: 30.0,fontWeight: FontWeight.bold,color: Color(orange),textAlign: TextAlign.center,),
+          Image.asset('assets/image/celulares.png',height: 700,),
+          TextCustom(text: 'Sobre nós',size: 35.0,fontWeight: FontWeight.bold,color: Color(orange),textAlign: TextAlign.center,),
           SizedBox(height: 50,),
           TextCustom(
             text: 'Somos uma Startup que atua na luta contra o desperdício,\nfornecendo alimentos que seriam descartados por terem sido\nproduzidos em excesso a um preço acessível.',
-            size: 24.0,textAlign: TextAlign.center,maxLines: 3,
+            size: 32.0,textAlign: TextAlign.center,maxLines: 3,
           ),
           SizedBox(height: 150,),
           Container(
@@ -359,7 +357,7 @@ class LayoutWeb extends StatelessWidget {
                 SizedBox(height: 30,),
                 TextCustom(
                   text: 'Juntos contra o desperdício!',
-                  size: 22.0,textAlign: TextAlign.center,fontWeight: FontWeight.bold,color: Colors.white,
+                  size: 25.0,textAlign: TextAlign.center,fontWeight: FontWeight.bold,color: Colors.white,
                 ),
                 SizedBox(height: 40,),
                 Row(
