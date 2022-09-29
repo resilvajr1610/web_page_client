@@ -227,7 +227,7 @@ class LayoutWeb extends StatelessWidget {
                               style: TextStyle(color: Colors.white,fontSize: 30.0,fontWeight: FontWeight.bold,fontFamily: 'Nunito',decoration: TextDecoration.underline)
                           ),
                           TextSpan(
-                              text: ' e evitar o ',
+                              text: ' uma grana e combater o ',
                               style: TextStyle(color: Colors.white,fontSize: 30.0,fontWeight: FontWeight.bold,fontFamily: 'Nunito')
                           ),
                           TextSpan(
