@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:web_page_client/util/image_const.dart';
 import 'package:web_page_client/widgets/text_custom.dart';
 
 void main() {
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'PromoSave',
       home: const MyHomePage(),
       debugShowCheckedModeBanner: false,
     );
@@ -71,7 +73,7 @@ class LayoutWeb extends StatelessWidget {
             children: [
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 8.0,horizontal: 80),
-                child: Image.asset('assets/image/logo.png',height: 133,),
+                child: Image.network(ImageConst.logo,height: 133,),
               ),
               Spacer(),
               InkWell(
@@ -202,7 +204,7 @@ class LayoutWeb extends StatelessWidget {
                 ),
                 Container(
                   // color: Colors.green,
-                    child: Image.asset('assets/image/celular_home.png',width: width*0.35,)),
+                    child: Image.network(ImageConst.celular_home,width: width*0.35,)),
               ],
             ),
           ),
@@ -340,7 +342,7 @@ class LayoutWeb extends StatelessWidget {
               ],
             ),
           ),
-          Image.asset('assets/image/celulares.png',height: 700,),
+          Image.network(ImageConst.celulares,height: 700,),
           TextCustom(text: 'Sobre nós',size: 35.0,fontWeight: FontWeight.bold,color: Color(orange),textAlign: TextAlign.center,),
           SizedBox(height: 50,),
           TextCustom(
@@ -386,7 +388,7 @@ class LayoutWeb extends StatelessWidget {
                   ],
                 ),
                 SizedBox(height: 40,),
-                Image.asset('assets/image/logo_bottom.png',height: 90,),
+                Image.network(ImageConst.logo_bottom,height: 90,),
               ],
             ),
           )
@@ -413,7 +415,7 @@ class LayoutMobile extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
-        title: Image.asset('assets/image/logo.png',height: 50,),
+        title: Image.network(ImageConst.logo,height: 50,),
         centerTitle: true,
         elevation: 0,
       ),
@@ -480,7 +482,7 @@ class LayoutMobile extends StatelessWidget {
                   SizedBox(height: 30),
                   Container(
                     // color: Colors.green,
-                      child: Image.asset('assets/image/celular_home.png',width: width*0.6,)
+                      child: Image.network(ImageConst.celular_home,width: width*0.6,)
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -508,22 +510,22 @@ class LayoutMobile extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(top: 60.0),
-                    child: TextCustom(text:'O Aplicativo feito para você',size: 20.0,fontWeight: FontWeight.bold,color: Colors.white,),
+                    child: TextCustom(text:'O Aplicativo feito para você que',size: 18.0,fontWeight: FontWeight.bold,color: Colors.white,),
                   ),
                   RichText(
                       text: TextSpan(
                           children: [
                             TextSpan(
-                                text: 'que quer ',
-                                style: TextStyle(color: Colors.white,fontSize: 20.0,fontWeight: FontWeight.bold,fontFamily: 'Nunito')
+                                text: ' quer ',
+                                style: TextStyle(color: Colors.white,fontSize: 18.0,fontWeight: FontWeight.bold,fontFamily: 'Nunito')
                             ),
                             TextSpan(
                                 text: 'POUPAR',
-                                style: TextStyle(color: Colors.white,fontSize: 20.0,fontWeight: FontWeight.bold,fontFamily: 'Nunito',decoration: TextDecoration.underline)
+                                style: TextStyle(color: Colors.white,fontSize: 18.0,fontWeight: FontWeight.bold,fontFamily: 'Nunito',decoration: TextDecoration.underline)
                             ),
                             TextSpan(
-                                text: ' e evitar o ',
-                                style: TextStyle(color: Colors.white,fontSize: 20.0,fontWeight: FontWeight.bold,fontFamily: 'Nunito')
+                                text: ' uma grana e combater',
+                                style: TextStyle(color: Colors.white,fontSize: 18.0,fontWeight: FontWeight.bold,fontFamily: 'Nunito')
                             ),
                           ]
                       )
@@ -532,12 +534,16 @@ class LayoutMobile extends StatelessWidget {
                       text: TextSpan(
                           children: [
                             TextSpan(
+                                text: ' o ',
+                                style: TextStyle(color: Colors.white,fontSize: 18.0,fontWeight: FontWeight.bold,fontFamily: 'Nunito')
+                            ),
+                            TextSpan(
                                 text: 'DESPERDÍCIO',
-                                style: TextStyle(color: Colors.white,fontSize: 20.0,fontWeight: FontWeight.bold,fontFamily: 'Nunito',decoration: TextDecoration.underline)
+                                style: TextStyle(color: Colors.white,fontSize: 18.0,fontWeight: FontWeight.bold,fontFamily: 'Nunito',decoration: TextDecoration.underline)
                             ),
                             TextSpan(
                                 text: ' de alimentos',
-                                style: TextStyle(color: Colors.white,fontSize: 20.0,fontWeight: FontWeight.bold,fontFamily: 'Nunito')
+                                style: TextStyle(color: Colors.white,fontSize: 18.0,fontWeight: FontWeight.bold,fontFamily: 'Nunito')
                             ),
                           ]
                       )
@@ -633,7 +639,7 @@ class LayoutMobile extends StatelessWidget {
                 ],
               ),
             ),
-            Image.asset('assets/image/celulares1.png',width: width*0.8,),
+            Image.network(ImageConst.celulares1,width: width*0.8,),
             TextCustom(text: 'Sobre nós',size: 30.0,fontWeight: FontWeight.bold,color: Color(orange),textAlign: TextAlign.center,),
             SizedBox(height: 50,),
             Padding(
@@ -682,7 +688,7 @@ class LayoutMobile extends StatelessWidget {
                     ],
                   ),
                   SizedBox(height: 10,),
-                  Image.asset('assets/image/logo_bottom.png',height: 75,),
+                  Image.network(ImageConst.logo_bottom,height: 75,),
                   SizedBox(height: 20,),
                 ],
               ),

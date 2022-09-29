@@ -1,11 +1,11 @@
 {
-    "name": "web_page_client",
-    "short_name": "web_page_client",
+    "name": "PromoSave",
+    "short_name": "PromoSave",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "PromoSave",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
