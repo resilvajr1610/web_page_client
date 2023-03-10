@@ -192,12 +192,17 @@ class LayoutWeb extends StatelessWidget {
                     Row(
                       children: [
                         InkWell(
-                            onTap: ()async{
-                              await launch('https://play.google.com/store/apps/details?id=com.promosave.promosavecliente');
-                            },
-                            child: Image.asset('assets/image/google_play.png',width: 200,)
+                          onTap: ()async{
+                            await launch('https://play.google.com/store/apps/details?id=com.promosave.promosavecliente');
+                          },
+                          child: Image.asset('assets/image/google_play.png',width: 200,)
                         ),
-                        Image.asset('assets/image/app_store.png',width: 200,),
+                        InkWell(
+                          onTap: ()async{
+                            await launch('https://apps.apple.com/us/app/promosave/id1660642879');
+                          },
+                          child: Image.asset('assets/image/app_store.png',width: 200,)
+                        ),
                       ],
                     )
                   ],
@@ -385,6 +390,13 @@ class LayoutWeb extends StatelessWidget {
                       },
                       icon:  Icon(FontAwesomeIcons.twitterSquare,color: Colors.white,size: 50,),
                     ),
+                    SizedBox(width: 30,),
+                    IconButton(
+                      onPressed: ()async{
+                        await launch('https://api.whatsapp.com/send?phone=5541992168531');
+                      },
+                      icon:  Icon(FontAwesomeIcons.whatsapp,color: Colors.white,size: 50,),
+                    ),
                   ],
                 ),
                 SizedBox(height: 40,),
@@ -493,7 +505,12 @@ class LayoutMobile extends StatelessWidget {
                           },
                           child: Image.asset('assets/image/google_play.png',width: 175,)
                       ),
-                      Image.asset('assets/image/app_store.png',width: 175,),
+                      InkWell(
+                          onTap: ()async{
+                            await launch('https://apps.apple.com/us/app/promosave/id1660642879');
+                          },
+                        child: Image.asset('assets/image/app_store.png',width: 175,)
+                      ),
                     ],
                   )
                 ],
@@ -683,6 +700,12 @@ class LayoutMobile extends StatelessWidget {
                           await launch('https://twitter.com/PromoSaveBrasil');
                         },
                         icon:  Icon(FontAwesomeIcons.twitterSquare,color: Colors.white,size: 30,),
+                      ),
+                      IconButton(
+                        onPressed: ()async{
+                          await launch('https://api.whatsapp.com/send?phone=5541992168531');
+                        },
+                        icon:  Icon(FontAwesomeIcons.whatsapp,color: Colors.white,size: 30,),
                       ),
                       Container(),
                     ],
